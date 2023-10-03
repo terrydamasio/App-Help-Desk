@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'LoginController@index')->name('site.login');
+Route::post('/', 'LoginController@login')->name('site.login');
+
+Route::prefix('/app')->group(function () {
+    Route::get('/home', 'HomeController@index')->name('app.home');
+    Route::get('/abrir-chamado', 'AbreChamadoController@index')->name('app.abrir_chamado');
+    Route::get('/consultar-chamado', 'ConsultaChamadoController@index')->name('app.consultar_chamado');
 });
+
