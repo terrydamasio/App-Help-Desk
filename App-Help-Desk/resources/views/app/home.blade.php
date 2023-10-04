@@ -16,7 +16,7 @@
 
   <body>
 
-    @include('partials.topo')
+    @include('app.partials.topo')
 
     <div class="container">    
       <div class="row">
@@ -38,6 +38,6 @@
             </div>
           </div>
         </div>
-    </div>
+    </div>        
   </body>
 </html>
