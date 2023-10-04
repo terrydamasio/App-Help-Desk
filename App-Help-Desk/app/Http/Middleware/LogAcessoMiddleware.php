@@ -18,4 +18,5 @@ class LogAcessoMiddleware
         $resposta = $next($request);
         return $resposta;
     }
+    
 }
