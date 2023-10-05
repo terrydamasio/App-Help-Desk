@@ -16,7 +16,7 @@
 
   <body>
 
-    @include('app.partials.topo')
+    @include('app.layouts.partials.topo')
 
     <div class="container">    
       <div class="row">
